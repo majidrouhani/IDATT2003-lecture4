@@ -1,7 +1,5 @@
 package edu.ntnu.idatt2001.lectures.equality.eks2;
 
-import java.util.Objects;
-
 public class Person {
   private final String fullname;
   private final String firstName;
