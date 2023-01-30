@@ -1,7 +1,23 @@
 package edu.ntnu.idatt2001.lectures.equality.eks3;
 
+import java.time.LocalDate;
+
 public class Person {
   private String fullname;
+  private LocalDate birthDate;
+
+  public Person(String name, LocalDate birthDate) {
+    this.setFullname(name);
+    this.setBirthDate(birthDate);
+  }
+
+  public LocalDate getBirthDate() {
+    return birthDate;
+  }
+
+  public void setBirthDate(LocalDate birthDate) {
+    this.birthDate = birthDate;
+  }
 
   public String getFullname() {
     return fullname;
@@ -11,15 +27,12 @@ public class Person {
     this.fullname = fullname;
   }
 
-  public Person(String name) {
-    this.setFullname(name);
-  }
-
   @Override
   public int hashCode() {
     final int prime = 31;
     int result = 1;
     result = prime * result + ((fullname == null) ? 0 : fullname.hashCode());
+    result = prime * result + ((birthDate == null) ? 0 : birthDate.hashCode());
     return result;
   }
 
@@ -36,6 +49,11 @@ public class Person {
       if (other.fullname != null)
         return false;
     } else if (!fullname.equals(other.fullname))
+      return false;
+    if (birthDate == null) {
+      if (other.birthDate != null)
+        return false;
+    } else if (!birthDate.equals(other.birthDate))
       return false;
     return true;
   }
