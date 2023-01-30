@@ -45,7 +45,7 @@ public class AppTest3 {
        persons.add(p1);
        persons.add(p2);
        //than
-       assertTrue(persons.size() == 2); //assertion passed
+       assertTrue(persons.size() == 2); //assertion failed
     
     }
 }
