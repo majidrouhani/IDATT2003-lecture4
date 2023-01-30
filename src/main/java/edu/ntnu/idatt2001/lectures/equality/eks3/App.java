@@ -26,6 +26,9 @@ public class App {
     logger.log(Level.INFO, "p1.hashCode() = {0}", p1.hashCode());
     logger.log(Level.INFO, "p2.hashCode() = {0}", p2.hashCode());
     logger.log(Level.INFO, "p3.hashCode() = {0}", p3.hashCode());
-  }
 
+    p1.setFullname("Hans Jakob");
+    logger.log(Level.INFO, "Name = {0}", p1.getFullname());
+    logger.log(Level.INFO, "p1.hashCode() = {0}", p1.hashCode());
+  }
 }
