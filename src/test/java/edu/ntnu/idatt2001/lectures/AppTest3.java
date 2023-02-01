@@ -41,10 +41,10 @@ public class AppTest3 {
        Set<Person> persons = new HashSet<>();
     
        assertEquals(p1, p2); //assertion passed
-       //when
+
        persons.add(p1);
        persons.add(p2);
-       //than
+
        assertTrue(persons.size() == 2); //assertion failed
     
     }

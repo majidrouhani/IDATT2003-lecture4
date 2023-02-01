@@ -13,9 +13,6 @@ public class App1 {
     Person p2 = new Person("Hans Hansen", LocalDate.of(1990, 1, 10));
     Person p3 = p1;
 
-    Person[] persons = { p1, p2, p3 };
-    logger.log(Level.INFO, "{0}", persons);
-
     String result = (p1 == p2 ? "P1 er lik p2" : "P1 er ikke lik p2");
     logger.log(Level.INFO, "{0}", result);
 
