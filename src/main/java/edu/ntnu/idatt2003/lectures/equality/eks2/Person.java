@@ -26,7 +26,7 @@ public class Person {
   public void setFullname(String fullname) {
     this.fullname = fullname;
   }
-  
+
 
   @Override
   public boolean equals(Object obj) {
@@ -42,6 +42,12 @@ public class Person {
         return false;
     } else if (!fullname.equals(other.fullname))
       return false;
+    if (birthDate == null) {
+      if (other.birthDate != null)
+        return false;
+    } else if (!birthDate.equals(other.birthDate))
+      return false;
     return true;
   }
+  
 }

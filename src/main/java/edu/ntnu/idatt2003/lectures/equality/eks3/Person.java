@@ -56,5 +56,5 @@ public class Person {
     } else if (!birthDate.equals(other.birthDate))
       return false;
     return true;
-  }
+  }  
 }

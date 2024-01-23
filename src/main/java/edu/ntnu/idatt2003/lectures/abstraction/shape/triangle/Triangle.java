@@ -35,8 +35,7 @@ public class Triangle extends Shape {
   public double calcArea() {
     double l1 = 4*Math.pow(side1, 2)*Math.pow(side2, 2);
     double l2 = Math.pow(Math.pow(side1, 2)+Math.pow(side2, 2)-Math.pow(side3, 2),2);
-    return Math.sqrt(l1-l2)/4;
-    
+    return Math.sqrt(l1-l2)/4;    
   }
 
   @Override

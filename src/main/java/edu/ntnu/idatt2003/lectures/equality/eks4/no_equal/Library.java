@@ -6,7 +6,7 @@ import java.util.List;
 public class Library {
     public static void main(String[] args) {
         List<Book> books = new ArrayList<>();
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 1_000_000; i++) {
             String isbn = "978-3-16-148410-" + i;
             String title = "Book " + i;
             books.add(new Book(isbn, title));
@@ -14,7 +14,7 @@ public class Library {
 
         // Retrieving a book by ISBN without using hashCode
         long startTime = System.nanoTime();
-        Book bookToRetrieve = new Book("978-3-16-148410-4", "Book 4");
+        Book bookToRetrieve = new Book("978-3-16-148410-99840", "Book 99840");
 
         //Does not work if equal is not overriden in Book!
         if (books.contains(bookToRetrieve)) {
