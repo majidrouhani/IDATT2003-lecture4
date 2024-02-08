@@ -1,9 +1,5 @@
 package edu.ntnu.idatt2003.lectures.finalexamples.method;
 
-import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  * Client for testing final method.
  *
